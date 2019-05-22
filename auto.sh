@@ -15,6 +15,8 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock tilesize -int 75
 
 cp ./.zshrc ~/
-source .zshrc
 
 killall Dock
+clear
+echo "\n\n\n\n\n\n\n\n\n\n\nPlease terminate terminal for changes to take effect\nThis will close all Terminals!!"
+osascript -e 'tell application "Terminal" to quit'
