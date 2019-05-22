@@ -15,5 +15,6 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock tilesize -int 75
 
 cp ./.zshrc ~/
+source .zshrc
 
 killall Dock
