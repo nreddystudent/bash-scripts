@@ -1,3 +1,9 @@
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+echo "this is linux"
+cp ./.zshrc ~/
+cp ./.vimrc ~/
+cp ./solarized.vim ~/.vim/colors
+elif [[ "$OSTYPE" == "darwin"* ]]; then
 osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
  defaults write com.apple.dock persistent-apps -array
@@ -20,3 +26,7 @@ killall Dock
 clear
 echo "\n\n\n\n\n\n\n\n\n\n\nPlease terminate terminal for changes to take effect\nThis will close all Terminals!!"
 osascript -e 'tell application "Terminal" to quit'
+open -a "Google Chrome" https://wethinkcodestudents.slack.com/
+cp .vimrc ~/
+cp solarized.vim ~/.vim/colors
+fi
