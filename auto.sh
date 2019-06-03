@@ -43,8 +43,6 @@ clear
 
 echo "\n\n\n\n\n\n\n\n\n\n\nPlease terminate terminal for changes to take effect\nThis will close all Terminals!!"
 
-osascript -e 'tell application "Terminal" to quit'
-
 open -a "Google Chrome" https://wethinkcodestudents.slack.com/
 
 cp .vimrc ~/
@@ -52,5 +50,5 @@ cp .vimrc ~/
 mkdir -p ~/.vim/colors
 
 cp solarized.vim ~/.vim/colors
-
+osascript -e 'tell application "Terminal" to quit'
 fi
