@@ -32,7 +32,9 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/System Preferences.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Tolsadus/42homebrewfix/master/install.sh)"
 
+brew install npm
 defaults write com.apple.dock tilesize -int 75
 
 cp ./.zshrc ~/
